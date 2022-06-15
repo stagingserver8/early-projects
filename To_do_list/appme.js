@@ -5,6 +5,8 @@ const taskList= document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter')
 
+console.log("hello")
+
 loadEventListeners();
 
 function loadEventListeners() {
@@ -15,8 +17,6 @@ taskList.addEventListener('click', removeTask);
 clearBtn.addEventListener('click', clearTasks);
 filter.addEventListener('keyup', filterTasks)
 }
-
-
 
 //Get tasks from LS
 
