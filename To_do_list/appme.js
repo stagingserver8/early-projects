@@ -4,19 +4,16 @@ const taskInput = document.querySelector('#task');
 const taskList= document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter')
+const date = document.querySelector('#date')
 
-console.log("hello")
-
-loadEventListeners();
-
-function loadEventListeners() {
-
+// DOM event listener
 document.addEventListener('DOMContentLoaded', getTasks)
+//Add event button
 form.addEventListener('submit', addTask);
 taskList.addEventListener('click', removeTask);
 clearBtn.addEventListener('click', clearTasks);
 filter.addEventListener('keyup', filterTasks)
-}
+
 
 //Get tasks from LS
 
@@ -38,8 +35,10 @@ function getTasks() {
       li.appendChild(document.createTextNode(task));
       // Create new link element
       const link = document.createElement('a');
+
       // Add class
       link.className = 'delete-item secondary-content';
+
       // Add icon html
       link.innerHTML = '<i class="fa fa-remove"></i>';
       // Append the link to li
@@ -103,14 +102,14 @@ function storeTaskInLocalStorage(task) {
 
 function removeTask(e) {
     if(e.target.parentElement.classList.contains('delete-item')) {
-      if(confirm('Are You Sure?')) {
+      
         e.target.parentElement.parentElement.remove();
   
         // Remove from LS
         removeTaskFromLocalStorage(e.target.parentElement.parentElement);
       }
     }
-  }
+  
 
 
 // Remove from LS
@@ -159,4 +158,25 @@ function filterTasks(e) {
 
             });
         }
+
+
+// Add date to the top of the HTML
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const d = new Date();
+var currDate = d.getDate()
+var currMonth = monthNames[d.getMonth()];
+var today = currDate+'-'+currMonth
+
+console.log(today)
+
+document.getElementById("date").innerHTML+= today
+document.getElementById("date").style.fontSize = "30px";
+
+
+
+
 
