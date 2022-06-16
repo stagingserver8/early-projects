@@ -14,7 +14,6 @@ taskList.addEventListener('click', removeTask);
 clearBtn.addEventListener('click', clearTasks);
 filter.addEventListener('keyup', filterTasks)
 
-
 //Get tasks from LS
 
 // Get Tasks from LS
