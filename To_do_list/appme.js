@@ -6,6 +6,7 @@ const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter')
 const date = document.querySelector('#date')
 
+
 // DOM event listener
 document.addEventListener('DOMContentLoaded', getTasks)
 //Add event button
