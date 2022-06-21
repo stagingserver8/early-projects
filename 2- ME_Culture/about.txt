@@ -1,0 +1,3 @@
+The goal behind this project was to create a very simple HTML/CSS layout of few images that will be used to create a blog focused on Middle East. 
+
+The goal was to get to use image width feature on CSS as well as <row> and <column> fields on HTML. Used Unsplash to bring a few beautiful photos.
