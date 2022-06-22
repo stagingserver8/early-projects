@@ -1,4 +1,3 @@
-
 const form = document.querySelector('#task-form');
 const taskInput = document.querySelector('#task');
 const taskList= document.querySelector('.collection');
@@ -7,16 +6,14 @@ const filter = document.querySelector('#filter')
 const date = document.querySelector('#date')
 
 
-// DOM event listener
+// DOM event listeners
 document.addEventListener('DOMContentLoaded', getTasks)
-//Add event button
 form.addEventListener('submit', addTask);
 taskList.addEventListener('click', removeTask);
 clearBtn.addEventListener('click', clearTasks);
 filter.addEventListener('keyup', filterTasks)
 
 //Get tasks from LS
-
 // Get Tasks from LS
 function getTasks() {
     let tasks;
@@ -49,7 +46,7 @@ function getTasks() {
     });
   }
 
-// Add Task
+// Add a task
 function addTask(e) {
     if(taskInput.value === '') {
       alert('Add a task');
