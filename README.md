@@ -10,5 +10,6 @@ Project 1: A useful To-Do List
 
 The idea behind this project was to create a basic ‘to-do’ list that could be used to take note of your daily priorities. The list works with your browser’s local storage, which means it does not clear when you reload it. It also has a filter feature which allows you to sort through the tasks. This project is just a slightly modified version of Brad Traversy’s one featured in ‘Modern JavaScript from the beginning’ Udemy course.
 
-Project 2: A blog cover page
-Idea here was to create a simplistic blog/landing page for bloggers using a simple row/column format. Project should take about an hour and is great to get some training on creating simple pages with images. This one looks at the beauty of Middle East culture. No JS here.
+Project 2: A simple photo gallery
+
+The idea here was to create a simplistic blog/landing page for bloggers using a row/column format. This project should take about an hour and is great to get some training on creating simple pages with images. This one looks at the beauty of Middle East culture. No JS here.
