@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body {
+    background-color: grey;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#form {
+    padding: 5px;
+    margin-top: 200px;
+}
+
+.collection {
+    
+    padding: 5px;
+    margin-top: 400px;
+}
+
+</style>
+
+    
+<div class="container">
+
+    <form id="form">
+        <input id="textWindow" type="text" name="New Task"> 
+        <input type="submit" value="Add" class="btn">
+    </form>
+
+
+    <div class="collection"> </div>
+
+</div>
+
+
+<div class="answers">   </div>
+
+
+</body>
+
+<script>
+
+
+let array = [];
+
+document.querySelector('form').addEventListener('submit', function(e){
+    var input = document.getElementById('textWindow').value;
+    console.log(input);
+    array.push(input)
+    console.log(array)
+    const display = document.querySelector('.answers')
+    document.querySelector(".answers").textContent = array;
+    e.preventDefault();
+})
+
+
+
+
+</script>
+
+</html>
+
