@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
 
@@ -42,12 +43,12 @@ body {
     </form>
 
 
-    <div class="collection"> </div>
+  
 
 </div>
 
-
-<div class="answers">   </div>
+<div class="answers"> </div>
+<ul id="ansList"> </ul>
 
 
 </body>
@@ -63,12 +64,27 @@ document.querySelector('form').addEventListener('submit', function(e){
     array.push(input)
     console.log(array)
     const display = document.querySelector('.answers')
-    document.querySelector(".answers").textContent = array;
+    //document.getElementById(".ansList").textContent = array;
+    var ul = document. getElementById("ansList");
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(input));
+    //console.log(li)
+    ul.appendChild(li);
+
     e.preventDefault();
+
+
+/*
+function function1() {
+var ul = document. getElementById("list");
+var li = document. createElement("li");
+li. appendChild(document. createTextNode("Four"));
+ul. appendChild(li);
+}
+*/
+
+
 })
-
-
-
 
 </script>
 
