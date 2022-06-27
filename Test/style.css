@@ -89,6 +89,7 @@ body {
     justify-content: centre;
     align-items: left;
     margin-left: 300px;
+    list-style: decimal;
 
 }
 
@@ -98,15 +99,13 @@ body {
     text-align: center;
 }
 
-.fa-remove:hover {
+.fa-square:hover:before {
     cursor: pointer;
-}
+    content: "\f058" !important;
+    
+    
+    
 
-
-/*
-.containerlist {
-    background-color: orange
 }
-/*
 
 

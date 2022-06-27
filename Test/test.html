@@ -28,7 +28,6 @@
     <div class = "containerlist"> 
         <div class="answers"> </div>
         <ul id="ansList"> </ul>
-    </div>
 </div>   
 
 </body>
@@ -55,7 +54,7 @@ document.getElementById('button').addEventListener('click', function(e){
     if (input === "") 
         {
         console.log("EMPTY"); 
-        document.querySelector(".alert").innerHTML="Please add an item first!"
+        document.querySelector(".alert").innerHTML="Please add an item!"
         e.preventDefault();
         } 
         
@@ -65,7 +64,7 @@ document.getElementById('button').addEventListener('click', function(e){
             document.querySelector(".alert").innerHTML=""
             const link = document.createElement('a');
             link.classList = "delete-item secondary-content"
-            link.innerHTML = '  <i class="fa fa-check" style="font-size:18px;color:black"> </i> '
+            link.innerHTML = '  <i class="fa fa-circle" style="font-size:18px;color:black"> </i> '
             
 
             //Adding ClassName so I can add later an eventlistner that removes it
@@ -81,7 +80,7 @@ document.getElementById('button').addEventListener('click', function(e){
             //Adding Li to list 
             ul.appendChild(li);
             //Adding X icon to the 'li'
-            li.appendChild(link);
+            li.prepend(link);
             //Reseting input window to = 
             document.getElementById("textWindow").value = "";
             e.preventDefault();
@@ -124,7 +123,6 @@ function deleteItem(e) {
     }
     */
 }
-
 
 
 </script>
