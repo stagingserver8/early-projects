@@ -1,9 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
+
+
 body {
     background-color: #D3D5D7;   
 }
+
+
+/* New task window, Add and Clear Buttons */
 
 .container {
   display: flex;
@@ -16,12 +22,8 @@ body {
     margin-top: 200px;
 }
 
-.collection {
-    padding: 5px;
-    margin-top: 400px;
-    font-family: 'Work Sans', sans-serif;
-    
-}
+
+/* Textbox */
 
 #textWindow {
     border-radius: 25px;
@@ -40,10 +42,10 @@ body {
 }
 
 
-
 #textWindow:hover{
     border: 3px solid #050517;
 }
+
 
 #button {
     background-color: #fff;
@@ -86,9 +88,8 @@ body {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: centre;
-    align-items: left;
-    margin-left: 300px;
+    justify-content: center;
+    align-items: center;
     list-style: decimal;
 
 }
@@ -99,9 +100,10 @@ body {
     text-align: center;
 }
 
-.fa-square:hover:before {
+.fa-circle:hover:before {
     cursor: pointer;
     content: "\f058" !important;
+    color: green;
     
     
     
