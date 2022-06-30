@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice with local storage</title>
+</head>
+<body>
+<h1> Names </h1>
+
+
+<form action="" class="form">
+    <input type="text" ID="name">
+    <input type="submit" value="Add Name" class="btn">
+</form>
+
+
+</body>
+
+<script>
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    const name = document.getElementById('name').value;
+    console.log(name);
+    let names; 
+
+    if(localStorage.getItem('names') === null) {
+        names = []; 
+    } else {
+        names = JSON.parse(localStorage.getItem('names'));
+    }
+
+    names.push(name);
+    localStorage.setItem('names', JSON.stringify(names));
+
+
+
+    e.preventDefault();
+});
+
+
+
+</script>
+
+
+</html>

@@ -17,4 +17,5 @@ WineRegions.appendChild(paral);
 
 console.log(paral)
 
-console.log(Array.toString())
+console.log(Array.toString())                         
+
