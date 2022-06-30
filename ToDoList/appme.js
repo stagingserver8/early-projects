@@ -111,13 +111,14 @@ function removeTask(e) {
 
 // Remove from LS
 function removeTaskFromLocalStorage(taskItem) {
-    let tasks;
+  console.log(taskItem.textContent)
+  let tasks;
     if(localStorage.getItem('tasks') === null){
       tasks = [];
     } else {
       tasks = JSON.parse(localStorage.getItem('tasks'));
     }
-  
+
     tasks.forEach(function(task, index){
       if(taskItem.textContent === task){
         tasks.splice(index, 1);

@@ -37,6 +37,7 @@
 //DOM load event
 document.addEventListener('DOMContentLoaded', getTasks)
 
+const taskList = document.querySelector('.answers')
 
 
 //Get tasks from LS
@@ -73,14 +74,13 @@ function getTasks() {
 }
 
 
-
-
 //Clicking on the 'Clear' button
 document.getElementById('clear').addEventListener('click', function(e) 
 {
     document.getElementById("ansList").innerHTML = "";
     document.getElementById("textWindow").value = "";
-    document.querySelector(".alert").innerHTML=""
+    document.querySelector(".alert").innerHTML="";
+    localStorage.clear();
 e.preventDefault();
 })
 
@@ -164,21 +164,57 @@ ul. appendChild(li);
 
 document.body.addEventListener('click', deleteItem);
 
+
+
+function deleteItem(e) {
+    if(e.target.parentElement.classList.contains('delete-item')) {
+      
+        e.target.parentElement.parentElement.remove();
+        
+        // Remove from LS
+        removeTaskFromLocalStorage(e.target.parentElement.parentElement);
+      }
+    }
+  
+
+
+
+/*
 function deleteItem(e) {
     if(e.target.parentElement.classList.contains('delete-item')) {
         e.target.parentElement.parentElement.style="color:grey; text-decoration:line-through; font-size:smaller;";
         e.target.parentElement.remove();
-        removeTaskFromLS(e.target.parentElement) 
+        removeTaskFromLS(e.target.parentElement.parentElement) 
     }}
-
+*/
 
 
 
         //Remove from LS
        
-        function removeTaskFromLS(taskItem){
-       console.log(taskItem.textContent)
-        };
+    function removeTaskFromLocalStorage(taskItem) {
+    //console.log("Function LS")
+        let tasks;
+
+    //console.log(taskItem.textContent)
+    //localStorage.clear();
+    
+    if(localStorage.getItem('tasks') === null){
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+
+
+    tasks.forEach(function(task, index){
+        if(taskItem.textContent ==='    '+task){
+        tasks.splice(index, 1);
+      }
+    });
+  
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    
+  }
 
 
 
