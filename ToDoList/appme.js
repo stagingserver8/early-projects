@@ -13,7 +13,7 @@ taskList.addEventListener('click', removeTask);
 clearBtn.addEventListener('click', clearTasks);
 filter.addEventListener('keyup', filterTasks)
 
-//Get tasks from LS
+
 // Get Tasks from LS
 function getTasks() {
     let tasks;
@@ -129,14 +129,10 @@ function removeTaskFromLocalStorage(taskItem) {
   }
   
 
-
 // Clear Tasks
 function clearTasks() {
     taskList.innerHTML ='';
 }
-
-
-
 
 
 //Filter Tasks
