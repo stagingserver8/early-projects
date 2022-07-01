@@ -13,3 +13,6 @@ The idea behind this project was to create a basic ‘to-do’ list that could b
 Project 2: A simple photo gallery
 
 The idea here was to create a simplistic blog/landing page for bloggers using a row/column format. This project should take about an hour and is great to get some training on creating simple pages with images. This one looks at the beauty of Middle East culture. No JS here.
+
+Project 3: A loan calculator
+
