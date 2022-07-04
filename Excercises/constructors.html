@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Using Constructors</title>
+</head>
+<body>
+    <h1>Age Calculator Using Constructors </h1>
+
+    <label for="name"> Name</label>
+    <input type="text" id="name" required >
+
+    <label for="year"> Year of Birth </label>
+    <input type="text" id="year" required>
+    <br>
+    <br>
+    <button class="check" id="check"> Check Age </button>
+    <br>
+    <div class="message"> </div>
+
+</body>
+
+<script>
+
+const yob = document.getElementById("year");
+const name = document.getElementById("name");
+const button = document.getElementById("check");
+const message = document.querySelector(".message")
+button.addEventListener("click", CalculateAge);
+
+function CalculateAge(){
+    
+    function Person(firstname, yob) {
+        this.firstname = name.value;
+        this.yob = yob.value;
+    }
+    const Mike = new Person (name, yob);
+    console.log(Mike.firstname);
+    console.log(Mike.yob)
+
+    message.innerHTML = Mike.firstname 
+   
+
+
+
+
+}
+
+
+
+</script>
+</html>
