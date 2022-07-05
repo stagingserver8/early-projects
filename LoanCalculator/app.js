@@ -14,7 +14,7 @@ document.getElementById('loan-form').addEventListener('submit', function(e){
 // Calculate Results
 
 
-function calculateResults (){
+function calculateResults () {
   console.log('Calculating...');
   // UI Vars
   const amount = document.getElementById('amount');
