@@ -30,6 +30,24 @@ const button = document.getElementById("check");
 const message = document.querySelector(".message")
 button.addEventListener("click", CalculateAge);
 
+
+function Animal(namuchka, nrofyears) {
+    this.name = namuchka;
+    this.age = nrofyears;
+}
+
+const Bobs = new Animal ("Bobik", 23);
+
+
+
+Animal.prototype.NewAge = function() {
+    const age2 = (this.age + 1);
+    return age2;
+}
+
+console.log(Bobs.NewAge())
+
+
 function CalculateAge(){
     
     function Person(firstname, yob) {
@@ -37,16 +55,23 @@ function CalculateAge(){
         this.yob = yob.value;
     }
     const Mike = new Person (name, yob);
-    console.log(toString(Mike.firstname)+ToString(Mike.yob));
+    console.log(Mike.firstname);
     console.log(Mike.yob)
 
     message.innerHTML = Mike.firstname 
-   
 
-
-
-
+    Person.prototype.Chojnackify = function() {
+    const diff =  this.firstname+" Chojnacki";
+    return diff;
 }
+
+console.log(Mike.Chojnackify());
+   
+}
+
+
+//Prototype new name
+
 
 
 
