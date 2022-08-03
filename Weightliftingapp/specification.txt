@@ -1,0 +1,20 @@
+The very basic specification of this app is to load 4 different types of work outs.
+
+Upper 1, Upper 2, Lower 1 and Lower 2.
+
+Each will have a different set of excercises that you perform with a youtube link to make sure you are doing them well.
+
+There will be a timer on the right side. And number of excercises on the that have been done.
+
+Last time you were working with : 
+
+This time you lifted
+12 reps:
+9 reps:
+
+Next excercise
+
+
+We can start with basic 
+
+
