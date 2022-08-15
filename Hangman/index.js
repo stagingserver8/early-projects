@@ -17,5 +17,22 @@ const words = ['milan', 'moscow', 'doha', 'poznan', 'szczecin', 'wolin', 'miedzy
 //Select a random word
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-console.log(selectedWord)
+const correctLetters=[];
+const wrongLetters =[];
 
+
+
+//Show the hidden word
+function displayWord(){
+    
+    // Need to turn a string into an array first
+    wordEl.innerHTML = `
+    
+    
+    `
+
+}
+
+
+
+displayWord()
