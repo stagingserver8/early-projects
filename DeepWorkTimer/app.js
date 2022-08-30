@@ -20,12 +20,50 @@ let emo6 = document.querySelector('.emo6');
 emo6.style.display = 'none' 
 let emo7 = document.querySelector('.emo7');
 emo7.style.display = 'none' 
-
 var deepSessions = 0;
+
+document.addEventListener('DOMContentLoaded', getDeeps)
+
+//Load number from local storage
+
+function getDeeps() {
+
+    let Lions;
+        if(localStorage.getItem('Lions') === null){
+            Lions=[];
+            console.log("nothing here")
+            
+        } else {
+            Lions = JSON.parse(localStorage.getItem('Lions'))
+            console.log("something here")
+        }
+   
+     
+        if (Lions === 1) {
+            console.log("One Lion")   
+            emo1.style.display = 'block' 
+
+        }
+
+        if (Lions === 2) {
+            console.log("Two Lions")   
+            emo1.style.display = 'block' 
+            emo2.style.display = 'block' 
+
+        }
+
+        if (Lions === 3) {
+            console.log("Three Lions")   
+            emo1.style.display = 'block' 
+            emo2.style.display = 'block' 
+            emo3.style.display = 'block' 
+        }
+    }
+
 
 
 const nroflions = localStorage.getItem('Lions');
-console.log(nroflions);
+
 if (nroflions == 1) {
     emo1.style.display = 'block' 
 }
@@ -71,7 +109,6 @@ function displayTimer(){
             emo1.style.display = 'block'
             localStorage.setItem('Lions','1')
         }
-
 
         if (seconds == 8) {
             emo2.style.display = 'block'
@@ -126,10 +163,7 @@ const formattedToday = dd + '/' + mm + '/' + yyyy;
 //Displaying data on app
 document.getElementById('date').innerHTML = formattedToday;
 
-// Working with localStorage
-//localStorage.setItem('Lions','2')
-//localStorage.setItem('Lions','3')
-//console.log(localStorage.getItem("Lions"));
-//if (localStorage.getItem("Lions")>1) {
-//    console.log("OK")
-//}
+
+
+
+
