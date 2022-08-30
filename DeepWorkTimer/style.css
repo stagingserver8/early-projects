@@ -45,6 +45,7 @@ body{
     margin: 30px auto 0 auto;
     display: flex;
     justify-content: space-around;
+   
     
 }
 .buttons button{
@@ -58,7 +59,14 @@ body{
     border-radius: 8px;
     cursor: pointer;
     outline: none;
+    margin-left: 2px;
+    margin-right: 2px;
+ 
 }
+
+
+
+
 
 .analyticsButtons{
     display: flex;
@@ -75,6 +83,21 @@ body{
     outline: none;
 }
 
+#startTimer:hover {
+    background-color: black;
+}
+
+
+#resetTimer:hover {
+    background-color:red;
+}
+
+#pauseTimer:hover {
+    background-color:grey;
+}
+
+
+
 
 .counters {
     justify-items: right;
@@ -88,4 +111,8 @@ body{
     height: auto;
     width: auto;
     font-size: 50px;
+}
+
+.nrofdeeps {
+    text-align: center;
 }

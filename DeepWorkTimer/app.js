@@ -24,6 +24,20 @@ emo7.style.display = 'none'
 var deepSessions = 0;
 
 
+const nroflions = localStorage.getItem('Lions');
+console.log(nroflions);
+if (nroflions == 1) {
+    emo1.style.display = 'block' 
+}
+
+if (nroflions == 2 ) {
+    emo1.style.display = 'block' 
+    emo2.style.display ='block'
+}
+
+
+//Check nr of lions that are saved in local storage
+
 
 
 // Runs the function displayTimer every 1 second (1000 ms)
@@ -53,13 +67,25 @@ function displayTimer(){
             deepworks.innerHTML = deepSessions;
         }
 
-        if (seconds == 10) {
+        if (seconds == 5) {
             emo1.style.display = 'block'
+            localStorage.setItem('Lions','1')
+        }
 
+
+        if (seconds == 8) {
+            emo2.style.display = 'block'
+            localStorage.setItem('Lions','2')
+        }
+
+        if (seconds == 11) {
+            emo3.style.display = 'block'
+            localStorage.setItem('Lions','3')
         }
     
 
-    //Add one zero if hours is less than 10
+
+//Add one zero if hours is less than 10
  let h = hours < 10 ? "0" + hours : hours;
  let m = minutes < 10 ? "0" + minutes : minutes;
  let s = seconds < 10 ? "0" + seconds : seconds;
@@ -75,8 +101,8 @@ document.getElementById('resetTimer').addEventListener('click', ()=>{
     clearInterval(int);
     [seconds,minutes,hours] = [0,0,0];
     timerRef.innerHTML = '00 : 00 : 00 ';
-
-    
+    emo.style.display = 'none';
+    localStorage.clear();
 
 });
 
@@ -86,8 +112,7 @@ document.getElementById('pauseTimer').addEventListener('click', ()=>{
     clearInterval(int);
 });
 
-// Messing around with the date. Creating a date with mm/dd/yyyy format
-
+// Creating a date with mm/dd/yyyy format
 const today = new Date();
 const yyyy = today.getFullYear();
 let mm = today.getMonth() + 1; // Months start at 0!
@@ -98,4 +123,13 @@ if (mm < 10) mm = '0' + mm;
 
 const formattedToday = dd + '/' + mm + '/' + yyyy;
 
+//Displaying data on app
 document.getElementById('date').innerHTML = formattedToday;
+
+// Working with localStorage
+//localStorage.setItem('Lions','2')
+//localStorage.setItem('Lions','3')
+//console.log(localStorage.getItem("Lions"));
+//if (localStorage.getItem("Lions")>1) {
+//    console.log("OK")
+//}
