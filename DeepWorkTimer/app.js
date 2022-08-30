@@ -6,21 +6,25 @@ let int = null;
 
 let emo = document.querySelector('.emojis');
 
-let emo1 = document.querySelector('.emo1');
-emo1.style.display = 'none' 
+
+
+var emo1 = document.querySelector('.emo1');
 let emo2 = document.querySelector('.emo2');
-emo2.style.display = 'none' 
 let emo3 = document.querySelector('.emo3');
-emo3.style.display = 'none' 
-let emo4 = document.querySelector('.emo4');
-emo4.style.display = 'none' 
-let emo5 = document.querySelector('.emo5');
-emo5.style.display = 'none' 
-let emo6 = document.querySelector('.emo6');
-emo6.style.display = 'none' 
-let emo7 = document.querySelector('.emo7');
-emo7.style.display = 'none' 
+
 var deepSessions = 0;
+
+let emo1 = document.querySelector('.emo1');
+var emonumber = 2;
+emo`${emonumber}`.style.display= 'block'
+
+
+
+emo2.style.display = 'none'
+emo3.style.display = 'none'
+
+
+
 
 document.addEventListener('DOMContentLoaded', getDeeps)
 
