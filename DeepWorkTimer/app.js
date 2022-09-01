@@ -4,25 +4,25 @@ let poms = document.querySelector('.nrofpoms');
 let deepworks = document.querySelector('.nrofdeeps')
 let int = null;
 
-let emo = document.querySelector('.emojis');
 
 
 
-var emo1 = document.querySelector('.emo1');
-let emo2 = document.querySelector('.emo2');
-let emo3 = document.querySelector('.emo3');
+
 
 var deepSessions = 0;
 
-let emo1 = document.querySelector('.emo1');
-var emonumber = 2;
-emo`${emonumber}`.style.display= 'block'
+
+//let emo = {3: document.querySelector('.emo2')}, num = 3;  
 
 
 
-emo2.style.display = 'none'
-emo3.style.display = 'none'
 
+
+
+
+//let emo1 = document.querySelector('.emo1');
+//var emonumber = 2;
+//emo`${emonumber}`.style.display= 'block'
 
 
 
@@ -44,23 +44,19 @@ function getDeeps() {
    
      
         if (Lions === 1) {
-            console.log("One Lion")   
-            emo1.style.display = 'block' 
+            document.getElementById("demo").innerHTML += '🐴';
 
         }
 
         if (Lions === 2) {
             console.log("Two Lions")   
-            emo1.style.display = 'block' 
-            emo2.style.display = 'block' 
+            document.getElementById("demo").innerHTML += '🐴';
 
         }
 
         if (Lions === 3) {
             console.log("Three Lions")   
-            emo1.style.display = 'block' 
-            emo2.style.display = 'block' 
-            emo3.style.display = 'block' 
+            document.getElementById("demo").innerHTML += '🐴';
         }
     }
 
@@ -68,14 +64,14 @@ function getDeeps() {
 
 const nroflions = localStorage.getItem('Lions');
 
-if (nroflions == 1) {
-    emo1.style.display = 'block' 
-}
+//if (nroflions == 1) {
+   // emo1.style.display = 'block' 
+//}
 
-if (nroflions == 2 ) {
-    emo1.style.display = 'block' 
-    emo2.style.display ='block'
-}
+//if (nroflions == 2 ) {
+    //emo1.style.display = 'block' 
+    //emo2.style.display ='block'
+//}
 
 
 //Check nr of lions that are saved in local storage
@@ -110,18 +106,16 @@ function displayTimer(){
         }
 
         if (seconds == 5) {
-            emo1.style.display = 'block'
+            document.getElementById("demo").innerHTML += '🐴';
             localStorage.setItem('Lions','1')
         }
 
         if (seconds == 8) {
-            emo2.style.display = 'block'
-            localStorage.setItem('Lions','2')
+            document.getElementById("demo").innerHTML += '🐴';
         }
 
         if (seconds == 11) {
-            emo3.style.display = 'block'
-            localStorage.setItem('Lions','3')
+            document.getElementById("demo").innerHTML += '🐴';
         }
     
 
@@ -142,7 +136,7 @@ document.getElementById('resetTimer').addEventListener('click', ()=>{
     clearInterval(int);
     [seconds,minutes,hours] = [0,0,0];
     timerRef.innerHTML = '00 : 00 : 00 ';
-    emo.style.display = 'none';
+    demo.style.display = 'none';
     localStorage.clear();
 
 });
