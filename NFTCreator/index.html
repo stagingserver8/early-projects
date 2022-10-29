@@ -10,16 +10,141 @@
     
   <body>
 
-    <div align="center"> 
-        <canvas id="canvas"> </canvas> 
-<br><br>
-
-<button onClick = "window.location.reload()">GENERATE</button>
-    </div>
-
+    <div class="row">
+      
+        <canvas id="canvas" width="200" height="200" > </canvas> 
+<br>
+<br>
+<br>
+<button id="button" onClick = "window.location.reload()">GO RANDOM </button>
+<button id="save" onClick = "Save()">SAVE </button>
+   
+</div>
+    <br>
 
 	<script src="code.js"></script>
   </body>
+
+  <form class="form">  
+    <b> Head </b>  
+    <select class="drop" id = "myList" onchange = "favTutorial()" >  
+    <option> ---Choose head--- </option>  
+    <option> Tulip </option>  
+    <option> Duck </option>  
+    <option> Bull </option>  
+    <option> Cow </option>  
+    <option> Chef</option>  
+    <option> Cage </option>  
+    <option> Sun </option>  
+    <option> Zebra </option>  
+    <option> Wine </option>  
+    <option> Whale </option>  
+    <option> Watch </option>  
+    <option> UFO </option>  
+    <option> Tooth </option>  
+    <option> Toaster </option>  
+    <option> Ghost </option>  
+    <option> Steak </option>  
+    <option> Punk </option>  
+    <option> Skateboard </option>  
+    <option> Sailboat </option>  
+    <option> Robot </option>  
+    <option> Goat </option>  
+    <option> Plant </option>  
+    <option> Gold Coin </option>  
+    <option> Heart </option>  
+    <option> Egg </option>  
+    <option> Dog </option>  
+    <option> Camera </option>  
+    <option> Bank </option>  
+    <option> Baseball </option>
+    <option> Beer </option>
+    <option> Burger </option>
+
+    
+    
+    <option>  </option>  
+
+
+    </select>  
+
+    <br>
+
+    <b> Glasses </b>  
+    <select class="drop" id = "myListGlass" onchange = "favTutorialGlass()" >  
+    <option> ---Choose glasses--- </option>  
+    <option> Orange </option>  
+    <option> Green </option>  
+    <option> Red </option>  
+    <option> Funky </option>  
+    </select>  
+
+<br>
+
+    <b> Accessory </b>  
+    <select class="drop" id = "myListAccess" onchange = "favTutorialAccess()" >  
+    <option> ---Choose accessory--- </option>  
+    <option> Clown Scarf </option>  
+    <option> Small Bling </option>  
+    <option> Safety Vest </option>  
+    <option> Ying Yang </option>  
+    <option> Black Tie </option>  
+    <option> Sunset </option>  
+    <option> Shrimp </option>  
+    <option> Rainbow Steps</option>  
+    <option> Old Shirt </option>  
+    <option> Lightbulb </option> 
+    <option> Pocket Pencil </option> 
+    <option> Leaf </option> 
+    <option> Infinity </option> 
+    <option> Black Glasses </option> 
+    <option> Dollar Bling </option> 
+    <option> Eth </option> 
+    <option> Ducky </option> 
+    <option> Pride </option> 
+    <option> Cow </option> 
+    <option> Cloud </option> 
+    <option> Checkers </option> 
+    <option> Carrot </option> 
+    <option> Sunset Tshirt </option> 
+    <option> Sparkles </option> 
+    <option> Love </option> 
+    <option> Anchor </option> 
+
+    </select>  
+
+<br>
+
+    <b> Body </b>  
+    <select class="drop" id = "myListBody" onchange = "favTutorialBody()" >  
+    <option> ---Choose body--- </option>  
+    <option> Purple </option>  
+    <option> Red </option>  
+    <option> Rust </option>  
+    <option> Blue </option> 
+    <option> Brown </option>  
+    <option> Cold </option>  
+    <option> White </option>  
+    <option> Yellow </option>  
+    <option> Hot Brown </option> 
+    <option> Peachy </option> 
+    <option> Pink </option> 
+    <option> Beige </option> 
+
+    </select>  
+<br>
+    <b> Background </b>  
+    <select class="drop" id = "myListBack" onchange = "favTutorialBack()" >  
+    <option> ---Choose background--- </option>  
+    <option> Warm  </option>  
+    <option> Cold </option>  
+
+    </select>  
+
+
+
+
+    </form>  
 
 
 </html>
