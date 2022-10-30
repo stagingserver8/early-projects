@@ -1,0 +1,50 @@
+16-June
+First day of writing of this log. Worked on To-Do list JavaScript project. Played around with Github and created a Github account. Made a commitment to upload code to Github daily. 'To-Do list' project sort of easy but few areas of code which I did not understand and decided to copy. Promised myself I will not do this and then went back to documenting the to-do list project. Realised that lot of the things I had doubts with are actually covered in the course. Decided I will go to and do the actual course.
+
+17-June
+Created a "curriculum" to follow my web development journey this morning. The curriculum has about  435 hours.  Downloaded Python and set up all the Github links to both PyCharm and VS Code. Made a commitment not to pollute this laptop with unnecessary things. Cleaned my room and connected my Macbook Pro to the big screen. Made a commitment that do I want to become proficient at web development to a) create things for myself and b) create things for others. The first part of this will be web development and also design. I have included Figma and a few other design elements in my curriculum. Part of the day was working with HTML/CSS of the course including one simple website. Have also uploaded my past drone work
+
+18-June
+Mainly worked on HTML/CSS. Created a short landing page for a coffee shop inspired by typica.coffee website. Got a template from the web that has a nice hamburger type of menu. Played around with the menu to try to adjust a few things, including the slider menu as you click it. Playing around with CSS is not exactly a piece of cake! Started JS lecture on the DOM but quickly navigated back to the coffee shop design. I have rewatched some of the video from yesterday about landing page and learned a few new features. Uploaded progress on github. Idea: create a great template for a coffee shop owner and send it to a number of coffee shops and see if they like it. Also one idea is to have a create a number of your own web templates that you can sell to others. 
+
+19-June
+Continued working on basic template for a coffee shop that I started yesterday. Did some work with CSS, namely the animation function, which allows text to nicely appear on the page. Also worked on DOM manipulation and events , including both single and multiple elements. Uploaded two previous projects to GitHub, namely : the family weather app and the maps application. Also spent a bit of time doing some revision; looking at JS fundamentals ; variables, type conversion, math object, template literals, and switches. 
+
+20-June
+A big chunk of the time has been spent on improving the coffee shop website/template and playing around with Flexbox, sourcing images to use, working with text, and making sure the page looks good. CSS is not easy!!! I have also downloaded a nice piece of code to display the social media links on the very bottom. I have also changed the cover image. Tomorrow I will be spending time to hopefully make final polishes on this website, which includes fixing the menu, working on how the menu looks like, create a hyperlink on the map, and make a few more polishes here and then. I also want to crack the Flexbox model and might do a few more exercises on the side. Once this is done I'll continue with the To-Do list project. Uploaded all changes to code today (for the coffee shop) page. 
+
+21 June
+I have spent most of today getting my head around <row> and <column> elements in HTML and designing a simple page (now part of Project 2 on Github), with a series of photos. Each photo's opacity changes a little bit once you hover on it. Also listened to a lecture with Event Listeners and the Event Object (e). Ordered a few bits of hardware for the drone (power module for the Pixhawk, some extra cables, a Lidar Range Sensor and a GPS converter, batteries and a charger for the radio controller).
+
+22 June
+Continued on the JavaScript course focusing on Keyboard & Input Events as well as Event Bubbling and Delegation (Event Listeners). Spent time documenting the To-Do list code, including applying the event object I learned about as well as the filter feature. This is project 1 of my 100 projects plan that is now almost finished. I will probably re-do the whole to-do list from scratch myself just to make sure I understand it because it feels like I have been copying too much code and not doing enough myself. I have also made some small improvements to the Coffee Shop template website, specifically trying to make the nav bar sticky as you scroll down. Unfortunately I was not able to do this properly and will try to learn more about this tomorrow.
+
+23 June
+Decided to slow down and spent most of the time going back to the to-do list project and learning local storage. Figured out how to add arrays into local storage, how to clear local storage. At least seemed easy. Also on the back of the to-do list project (project 1), decided to do it complete from scratch to test my knowledge of it. So most of the time was spent working on arrays, DOM and displaying arrays in HTML page. I will be working on converting arrays into <ul> elements tomorrow.
+
+
+24 June
+Wrote a small article about copying code (and why not to do this), as well as what is the point of rushing when learning how to code. The original of that article can be found on my blog. Finally managed to create my own code and do my own to do list using (appendchild) method. Will continue working on this tomorrow, adding a delete sign and being able to delete the task. Pretty much the to-do list project but written by myself.
+
+25 June
+More work on TO-Do list project, and mainly with HTML and CSS, and creating new elements and styling them. Refreshed myself with flex box. Created a new layout altogether for the project. Started using font awesome to add an 'x' to remove a given task from the list. Started reading an awesome book on my kindle called How to write clean code, which was very interesting.
+
+26 June
+Focus of the day was on removing items from the to-do list. For this I had to learn event bubbling and delegation. Lot of progress has been done today. Removing icon and removing task. Half way through I thought it would be nice not to remove the item but to grey it out. Changed the icon. Worked on:
+```
+e.target.parentElement.parentElement.style
+```
+Tomorrow I will introduce web storage my own to do list, clean up/refactor the code and ideally put it out somewhere on the web. Also want to perfect the styling.
+
+27th June
+Most of the time was spent on playing with font awesome, creating different icons to display in different places of the array. Felt very proud of myself that was able to find information online for most of the things I was after. The only thing missing now is adding web storage feature and pushing the software. The remaining drone parts have arrived so Ill be looking to start working on assembling the drone and hopefully getting it to fly soon.
+
+28th June
+Basic work on arrays. Looked at MDN test your skills guide page on arrays. The idea is to get comfortable with arrays before start working on local storage. Created a new folder called Exercises where the exercises are there.
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Arrays#arrays_1
+
+29th June
+Today's work was mainly dedicated on learning and working with Local Storage. Parts of the to-do list that has been created has now been updated to also push elements into local storage. Created a very small side project to test my knowledge about this.
+
+30th June
+Finally managed to crack the code and make local storage work, especially with removing items. Took a bit of experimenting and I am still not 100% sure I understand how it works. But I was glad I got it all online and now the To - Do list project is almost complete. One of the things I had to drop was how I want the tasks to appear after they are completed, given I got local storage to work. But OK it is a small compromise and I still might want to come back to my To-Do list and make it  alot better once I know a bit more. For now this is just fine. Happy with it. 

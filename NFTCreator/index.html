@@ -10,21 +10,20 @@
     
   <body>
 
-    <div class="row">
-      
-        <canvas id="canvas" width="200" height="200" > </canvas> 
-<br>
-<br>
-<br>
-<button id="button" onClick = "window.location.reload()">GO RANDOM </button>
-<button id="save" onClick = "Save()">SAVE </button>
-   
+<h1 id="intro">Avatar Playground</h1>
+
+  <div class="canvaselement">
+    <canvas id="canvas" width="200" height="200" > </canvas> 
+  </div>
+
+<div class="actionbuttons"> 
+    <button class="button" onClick = "window.location.reload()">GO RANDOM </button>
+    <button class="button" onClick = "Save()">SAVE </button>
 </div>
-    <br>
 
-	<script src="code.js"></script>
-  </body>
+<br>
 
+<div class="selectors"> 
   <form class="form">  
     <b> Head </b>  
     <select class="drop" id = "myList" onchange = "favTutorial()" >  
@@ -60,11 +59,6 @@
     <option> Baseball </option>
     <option> Beer </option>
     <option> Burger </option>
-
-    
-    
-    <option>  </option>  
-
 
     </select>  
 
@@ -138,13 +132,10 @@
     <option> ---Choose background--- </option>  
     <option> Warm  </option>  
     <option> Cold </option>  
-
     </select>  
-
-
-
-
     </form>  
-
+  </div>
 
 </html>
+
+<script src="code.js"></script>

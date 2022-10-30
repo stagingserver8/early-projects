@@ -1,0 +1,2 @@
+29.10: Was working on the avatar project. Learned how to Save a canvas to your file. Also used Noun DAO project to import a number of new traits to the folder. Lot of room for improvement here. Still sort of stuck on the CSS, how to place elements on the page and style different things.
+

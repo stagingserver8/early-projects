@@ -1,0 +1,23 @@
+1 July
+Final touches on To Do project today. Cleaned up the code and did some more formatting on CSS and I think it is now working quite well. Created an account on Neflify and then tried to upload the code to the server. I would still like to do some work on this, namely to write up a documentation. Each of the projects should have the code cleaned up, be hosted and have a nice documentation. Started to do work on a loan calculator JS project and mainly finished the HTML set up. 
+
+2 July 
+Worked on JS of the loan calculator. A bit tougher than expected as had to wrestle a bit with the Boostrap CSS framework and various classes that were fairly new to me and how they work. Things like .textContent and .value displaying at various elements of HTML site. Work continues today on JS version of that loan calculator.
+
+3 July
+Completed the loan calculator project. Starting on the Section 5 focusing now on the few elements that I had some trouble with. Object oriented programming, constructors, and later on async JS. The rest of course looks very interesting.
+
+4 July
+Today cracked on with the JS course. Started working on objects, constructors, 'this' key word. Started one file on the JS folder to just practice what I have learned (creating a name, getting year of birth, calculating age, creating a prototype out of it). Relatively interesting session. 
+
+5 July
+
+More reading and work around constructors and prototypes.
+
+6 July
+
+Worked on prototypal inheritance, object.create, Classes and sub classes. Getting ready for the next project being a book / home library log. 
+
+7/8 July
+
+Started work on first project relating to prototypes and classes. Will be building a simple a platform that logs books in your own library. It will be done using both classes and prototypes.

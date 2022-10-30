@@ -1,0 +1,8 @@
+15 August
+
+Restarting the diary and daily documentation of my learning. About an hour today focusing on AJAX and using Get requests. Created a very simple Chuck Norris app that pulls and parses JSON files and displays them on the website. Really fun. Will continue tomorrow on Rest APIs and HTTP requests.
+
+
+
+
+
