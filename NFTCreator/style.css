@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #cdcdcd;
+    background-color:#E2DBBE;
     font-family: 'Londrina Solid', cursive;
   }
   
@@ -82,6 +82,14 @@ background-color:#3369ff;
 
 
 #intro {
-    margin-left: 140px;
-    
+    margin-left: 140px;   
+    margin-top: 20px;
+}
+
+
+.ending {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 15px;
 }
